@@ -4,6 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>H4XTV - Baixar APK Oficial</title>
+    
+    <meta name="google-site-verification" content="RS5TIFTCrPU7hf7broMVhMHC5ZfAXGdEtefST9rNESc" />
+
     <style>
         :root {
             --primary-color: #2563eb; /* Azul moderno, mude se quiser */
@@ -81,6 +84,34 @@
             background-color: #1d4ed8;
         }
 
+        /* Estilos da seção de Capturas de Tela */
+        .screenshots-title {
+            margin-top: 5rem; 
+            font-size: 2rem;
+            font-weight: 700;
+        }
+
+        .screenshots-container {
+            display: flex; 
+            gap: 1.5rem; 
+            justify-content: center; 
+            flex-wrap: wrap; 
+            margin-top: 2rem; 
+            width: 100%;
+        }
+
+        .screenshots-container img {
+            width: 260px; 
+            height: auto;
+            border-radius: 12px; 
+            box-shadow: 0 8px 24px rgba(0,0,0,0.6);
+            transition: transform 0.3s ease;
+        }
+
+        .screenshots-container img:hover {
+            transform: scale(1.03);
+        }
+
         .features {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
@@ -134,6 +165,11 @@
         @media (max-width: 768px) {
             .hero h1 { font-size: 2.2rem; }
             .hero p { font-size: 1.1rem; }
+            .screenshots-container img { width: 45%; } /* Ajusta os prints para caberem lado a lado no celular */
+        }
+
+        @media (max-width: 480px) {
+            .screenshots-container img { width: 80%; } /* Em telas muito pequenas deixa um por linha */
         }
     </style>
 </head>
@@ -150,13 +186,20 @@
             <a href="https://github.com/KMODs-dev/H4XTV/releases/download/H4XTV/H4XTV-Streaming_3.1.apk" class="btn-download">Baixar APK Oficial</a>
         </section>
 
+        <h2 class="screenshots-title">Interface do Aplicativo</h2>
+        <section class="screenshots-container">
+            <img src="print1.png" alt="Demonstração H4XTV 1">
+            <img src="print2.png" alt="Demonstração H4XTV 2">
+            <img src="print3.png" alt="Demonstração H4XTV 3">
+        </section>
+
         <section class="features">
             <div class="feature-card">
                 <h3>Disponível Apenas Para Android</h3>
                 <p>Suporte Em Breve Para Outras Plataformas.</p>
             </div>
             <div class="feature-card">
-                </h3>Filmes E Series Atualizados Diariamente.</h3>
+                <h3>Filmes E Series Atualizados Diariamente.</h3>
                 <p>Multiplos Canais Esportivos.</p>
             </div>
             <div class="feature-card">
@@ -170,7 +213,7 @@
             <div class="footer-links">
                 <a href="#privacidade">Política de Privacidade</a>
                 <a href="#termos">Termos de Uso</a>
-                <a href="mailto:seu-email@suporte.com">Suporte</a>
+                <a href="mailto:lteam7l@suporte.com">Suporte</a>
             </div>
         </footer>
     </main>
